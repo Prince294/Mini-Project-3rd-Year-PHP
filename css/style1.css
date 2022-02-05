@@ -1,0 +1,192 @@
+.pole {
+  position: absolute;
+  top: 18vh;
+  left: 20vw;
+}
+
+.pole .pole1 {
+  width: 8px;
+  height: 180px;
+  background-color: var(--pole);
+}
+.pole .pole1 .upper1 {
+  position: absolute;
+  border: 9px solid var(--pole);
+  left: -38px;
+  top: -38px;
+  border-bottom: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 50% 50% 0 0;
+  transform: translatex(37px);
+}
+.pole .pole1 .light1 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--poleLight);
+  position: relative;
+  top: 0px;
+  left: 50px;
+  box-shadow: 0 0 30px 20px rgb(248, 111, 99);
+}
+
+.pole .pole1 .light_shadow1 {
+  position: absolute;
+  height: 0px;
+  width: 20px;
+  top: 2vh;
+  left: -7px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 180px solid rgba(228, 165, 165, 0.5);
+  z-index: 0;
+  transform-style: preserve-3d;
+}
+.pole .pole1 .light_shadow1::after {
+  position: absolute;
+  content: "";
+  height: 140px;
+  width: 140px;
+  top: 110px;
+  left: -60px;
+  border-radius: 50%;
+  background-color: rgba(228, 165, 165, 0.5);
+  transform: rotateX(70deg);
+}
+
+.pole .pole2 .light_shadow2 {
+  position: absolute;
+  height: 0px;
+  width: 20px;
+  top: 2vh;
+  left: -123px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 180px solid rgba(228, 165, 165, 0.5);
+  z-index: 0;
+  transform-style: preserve-3d;
+}
+.pole .pole2 .light_shadow2::after {
+  position: absolute;
+  content: "";
+  height: 140px;
+  width: 140px;
+  top: 110px;
+  left: -60px;
+  border-radius: 50%;
+  background-color: rgba(228, 165, 165, 0.5);
+  transform: rotateX(70deg);
+}
+
+.pole .pole1 .footer1 {
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  left: -8px;
+  top: 170px;
+  background-color: var(--poleUp);
+}
+
+.pole .pole2 .footer2 {
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  left: -8px;
+  top: 170px;
+  background-color: var(--poleUp);
+}
+
+.pole .pole1 .pole_info1 {
+  position: absolute;
+  left: 32px;
+  top: 10px;
+  width: 200px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.pole .pole1 .pole_info1::before {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid rgba(255, 255, 0, 0.6);
+  transform: rotate(-90deg);
+  left: -17.5px;
+  top: 20px;
+}
+
+.pole .pole1 .pole_info1 span {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.pole .pole2 {
+  width: 8px;
+  height: 180px;
+  position: relative;
+  top: -185px;
+  left: 57vw;
+  background-color: var(--pole);
+}
+
+.pole .pole2 .upper2 {
+  position: absolute;
+  border: 8px solid var(--pole);
+  left: -95px;
+  top: -38px;
+  border-bottom: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 50% 50% 0 0;
+  transform: translatex(37px);
+}
+
+.pole .pole2 .light2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--poleLight);
+  position: relative;
+  top: 0px;
+  left: -66px;
+  box-shadow: 0 0 30px 20px rgb(248, 111, 99);
+}
+
+.pole .pole2 .pole_info2 {
+  position: absolute;
+  left: 32px;
+  top: 10px;
+  width: 200px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.pole .pole2 .pole_info2::before {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid rgba(255, 255, 0, 0.6);
+  transform: rotate(-90deg);
+  left: -18px;
+  top: 20px;
+}
+
+.pole .pole2 .pole_info2 span {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: black;
+}
